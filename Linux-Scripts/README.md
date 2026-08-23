@@ -11,6 +11,7 @@ A single, portable shell script that installs the essential DevOps toolchain on 
 | Debian 12+ | apt |
 | Arch Linux | pacman |
 | Manjaro | pacman |
+| Omarchy | pacman |
 
 ## Tools Installed
 
@@ -31,7 +32,10 @@ A single, portable shell script that installs the essential DevOps toolchain on 
 
 ```bash
 # 1. Clone or download
-wget https://raw.githubusercontent.com/YOUR_USERNAME/devops-toolkit/main/setup-devops.sh
+git clone [it](https://github.com/asimayazmrd0987-glitch/Stoic.git)
+
+# 1.2 Move to it 
+cd Linux-Scripts
 
 # 2. Make executable
 chmod +x setup-devops.sh
@@ -44,7 +48,7 @@ chmod +x setup-devops.sh
 
 ## What Happens During Install
 
-1. **Detects your distro** automatically (Fedora, Ubuntu, Debian, Arch)
+1. **Detects your distro** automatically (Fedora, Ubuntu, Debian, Arch, Omarchy)
 2. **Skips already-installed tools** — safe to re-run
 3. **Adds official repositories** for Docker, HashiCorp, Microsoft
 4. **Enables Docker service** and adds your user to the `docker` group
@@ -83,8 +87,8 @@ kubectl get nodes
 If your machine has 8GB RAM or less, run the included performance tuning script after setup:
 
 ```bash
-chmod +x fedora-fix-lag.sh
-./fedora-fix-lag.sh
+chmod +x fedora-optimize.sh
+./fedora-optimize.sh
 ```
 
 This configures:
@@ -95,7 +99,7 @@ This configures:
 
 ## Uninstall / Clean Up
 
-The script does not provide an uninstaller. To remove tools:
+The script does not provide an uninstaller. To remove tools, but don't do it buddy :
 
 ```bash
 # Fedora
